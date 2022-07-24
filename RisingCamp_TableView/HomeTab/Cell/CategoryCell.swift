@@ -12,8 +12,8 @@ class CategoryCell: UITableViewCell {
     @IBOutlet weak var categoryLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.categoryLabel.highlightedTextColor = UIColor(red: 254/255, green: 125/255, blue: 54/255, alpha: 1)
-        self.categoryLabel.backgroundColor = .white
+//        self.categoryLabel.highlightedTextColor = UIColor(red: 254/255, green: 125/255, blue: 54/255, alpha: 1)
+//        self.categoryLabel.backgroundColor = .white
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

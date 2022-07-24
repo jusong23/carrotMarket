@@ -12,7 +12,7 @@ class CategoryDataModel {
     private var arrayCategory:[String] = [
     "디지털기기",
     "생활가전",
-    "가구/인테리아",
+    "가구/인테리어",
     "유아동",
     "유아도서",
     "생활/가공식품",
@@ -37,5 +37,4 @@ class CategoryDataModel {
         return arrayCategory[index]
     }
     
-
 }

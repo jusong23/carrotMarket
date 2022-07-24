@@ -26,6 +26,10 @@ class ViewController: UIViewController {
             forCellReuseIdentifier: "HomeCell")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {

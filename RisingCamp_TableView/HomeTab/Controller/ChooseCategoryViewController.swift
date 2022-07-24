@@ -11,7 +11,6 @@ protocol sendDataDelegate: AnyObject {
     func sendData(index: Int)
 }
 
-
 class ChooseCategoryViewController: UIViewController {
 
 //    print(getCategory(index: 0))
@@ -30,6 +29,12 @@ class ChooseCategoryViewController: UIViewController {
             forCellReuseIdentifier: "CategoryCell")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        print(UserDefaults.standard.integer(forKey: "Selected"))
+        print(UserDefaults.standard.integer(forKey: "CheckItFirst"))
+
+    }
+    
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -45,10 +50,12 @@ extension ChooseCategoryViewController: UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
 
         let cellCategory = dataModel.getCategory(index: indexPath.row)
-//        print(selectCheck)
-//        if self.selectCheck.contains(indexPath.row) {
-//            cell.categoryLabel.textColor = .green
-//        }
+        
+        if indexPath.row == UserDefaults.standard.integer(forKey: "Selected") && UserDefaults.standard.integer(forKey: "CheckItFirst") == 1  {
+            cell.tintColor = UIColor(red: 254/255, green: 125/255, blue: 54/255, alpha: 1)
+            cell.categoryLabel.textColor = UIColor(red: 254/255, green: 125/255, blue: 54/255, alpha: 1)
+            cell.accessoryType = .checkmark
+        }
         
         cell.categoryLabel.text = cellCategory
 //        let backgroundView = UIView()
@@ -64,6 +71,9 @@ extension ChooseCategoryViewController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.delegate?.sendData(index: indexPath.row)
+        UserDefaults.standard.setValue(indexPath.row, forKey: "Selected")
+        UserDefaults.standard.setValue(1, forKey: "CheckItFirst")
+        print(UserDefaults.standard.integer(forKey: "Selected"))
         self.navigationController?.popViewController(animated: true)
     }
 }

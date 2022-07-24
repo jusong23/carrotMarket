@@ -12,7 +12,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="RMY-oX-v6R">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dmm-Js-EXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="UJc-AI-djq" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Snb-lV-tlw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -33,6 +32,7 @@
                         <segue destination="0wy-pX-FM0" kind="relationship" relationship="viewControllers" id="jRF-Ne-X40"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dmm-Js-EXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2023" y="1085"/>
         </scene>
@@ -141,14 +141,201 @@
                     <view key="view" contentMode="scaleToFill" id="Xry-kT-teB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W9C-P0-GK5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T16-Uh-Sec">
+                                <rect key="frame" x="0.0" y="88" width="414" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ns1-Qf-Dc9">
+                                        <rect key="frame" x="0.0" y="0.0" width="444" height="60"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="diS-Ur-D1f">
+                                                <rect key="frame" x="0.0" y="0.0" width="444" height="60"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Cv-J2-Gx6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="73" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJK-Cd-Ad3">
+                                                                <rect key="frame" x="3" y="13" width="67" height="34"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="동네질문"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="VJK-Cd-Ad3" firstAttribute="top" secondItem="8Cv-J2-Gx6" secondAttribute="top" constant="13" id="BSy-C3-fdO"/>
+                                                            <constraint firstAttribute="bottom" secondItem="VJK-Cd-Ad3" secondAttribute="bottom" constant="13" id="OG6-5p-qG2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="VJK-Cd-Ad3" secondAttribute="trailing" constant="3" id="Q5s-ee-iXi"/>
+                                                            <constraint firstItem="VJK-Cd-Ad3" firstAttribute="centerY" secondItem="8Cv-J2-Gx6" secondAttribute="centerY" id="QQb-pO-RtX"/>
+                                                            <constraint firstItem="VJK-Cd-Ad3" firstAttribute="centerX" secondItem="8Cv-J2-Gx6" secondAttribute="centerX" id="R1I-rg-w62"/>
+                                                            <constraint firstItem="VJK-Cd-Ad3" firstAttribute="leading" secondItem="8Cv-J2-Gx6" secondAttribute="leading" constant="3" id="RA5-tv-agg"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kcl-9E-psR">
+                                                        <rect key="frame" x="74" y="0.0" width="73.5" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4n-oB-aHV">
+                                                                <rect key="frame" x="3" y="13" width="67.5" height="34"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="동네질문"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Y4n-oB-aHV" firstAttribute="top" secondItem="Kcl-9E-psR" secondAttribute="top" constant="13" id="0rg-Sq-mnF"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Y4n-oB-aHV" secondAttribute="bottom" constant="13" id="CDZ-vQ-46b"/>
+                                                            <constraint firstItem="Y4n-oB-aHV" firstAttribute="centerX" secondItem="Kcl-9E-psR" secondAttribute="centerX" id="DL1-PE-rDd"/>
+                                                            <constraint firstItem="Y4n-oB-aHV" firstAttribute="centerY" secondItem="Kcl-9E-psR" secondAttribute="centerY" id="TmO-R5-Sp8"/>
+                                                            <constraint firstItem="Y4n-oB-aHV" firstAttribute="leading" secondItem="Kcl-9E-psR" secondAttribute="leading" constant="3" id="pDm-VY-dmr"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Y4n-oB-aHV" secondAttribute="trailing" constant="3" id="vOD-dp-9VU"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEb-Gi-yUL">
+                                                        <rect key="frame" x="148.5" y="0.0" width="73" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jt8-sr-Rs4">
+                                                                <rect key="frame" x="3" y="13" width="67" height="34"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="동네질문"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="jt8-sr-Rs4" secondAttribute="trailing" constant="3" id="14E-N5-kZM"/>
+                                                            <constraint firstItem="jt8-sr-Rs4" firstAttribute="centerY" secondItem="qEb-Gi-yUL" secondAttribute="centerY" id="3Qn-h3-nIj"/>
+                                                            <constraint firstAttribute="bottom" secondItem="jt8-sr-Rs4" secondAttribute="bottom" constant="13" id="Zvf-vE-BEq"/>
+                                                            <constraint firstItem="jt8-sr-Rs4" firstAttribute="top" secondItem="qEb-Gi-yUL" secondAttribute="top" constant="13" id="fx0-vP-cR3"/>
+                                                            <constraint firstItem="jt8-sr-Rs4" firstAttribute="centerX" secondItem="qEb-Gi-yUL" secondAttribute="centerX" id="mfF-ip-smG"/>
+                                                            <constraint firstItem="jt8-sr-Rs4" firstAttribute="leading" secondItem="qEb-Gi-yUL" secondAttribute="leading" constant="3" id="pgU-25-vT9"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLr-pD-fUO">
+                                                        <rect key="frame" x="222.5" y="0.0" width="73" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHQ-Zg-JiA">
+                                                                <rect key="frame" x="3" y="13" width="67" height="34"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="동네질문"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="WHQ-Zg-JiA" secondAttribute="trailing" constant="3" id="5bt-9d-fdg"/>
+                                                            <constraint firstItem="WHQ-Zg-JiA" firstAttribute="centerY" secondItem="VLr-pD-fUO" secondAttribute="centerY" id="5cJ-SE-osi"/>
+                                                            <constraint firstItem="WHQ-Zg-JiA" firstAttribute="top" secondItem="VLr-pD-fUO" secondAttribute="top" constant="13" id="6nQ-cg-cwf"/>
+                                                            <constraint firstItem="WHQ-Zg-JiA" firstAttribute="leading" secondItem="VLr-pD-fUO" secondAttribute="leading" constant="3" id="P4X-wE-38p"/>
+                                                            <constraint firstItem="WHQ-Zg-JiA" firstAttribute="centerX" secondItem="VLr-pD-fUO" secondAttribute="centerX" id="WyU-8l-IlJ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="WHQ-Zg-JiA" secondAttribute="bottom" constant="13" id="iCg-rG-g0g"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNO-Gd-Sa4">
+                                                        <rect key="frame" x="296.5" y="0.0" width="73.5" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sg-tQ-K90">
+                                                                <rect key="frame" x="3" y="13" width="67.5" height="34"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="동네질문"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="0Sg-tQ-K90" firstAttribute="top" secondItem="hNO-Gd-Sa4" secondAttribute="top" constant="13" id="AvL-du-Rpc"/>
+                                                            <constraint firstItem="0Sg-tQ-K90" firstAttribute="leading" secondItem="hNO-Gd-Sa4" secondAttribute="leading" constant="3" id="E2Q-7H-V0K"/>
+                                                            <constraint firstAttribute="bottom" secondItem="0Sg-tQ-K90" secondAttribute="bottom" constant="13" id="VHz-Hb-VaM"/>
+                                                            <constraint firstItem="0Sg-tQ-K90" firstAttribute="centerX" secondItem="hNO-Gd-Sa4" secondAttribute="centerX" id="aU2-6W-ztI"/>
+                                                            <constraint firstItem="0Sg-tQ-K90" firstAttribute="centerY" secondItem="hNO-Gd-Sa4" secondAttribute="centerY" id="hPj-WJ-8qW"/>
+                                                            <constraint firstAttribute="trailing" secondItem="0Sg-tQ-K90" secondAttribute="trailing" constant="3" id="pHI-G6-veM"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVh-3p-lk1">
+                                                        <rect key="frame" x="371" y="0.0" width="73" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYH-MX-QlU">
+                                                                <rect key="frame" x="3" y="13" width="67" height="34"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="동네질문"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="GYH-MX-QlU" firstAttribute="top" secondItem="qVh-3p-lk1" secondAttribute="top" constant="13" id="5z1-r1-qcD"/>
+                                                            <constraint firstAttribute="trailing" secondItem="GYH-MX-QlU" secondAttribute="trailing" constant="3" id="JSZ-zI-ZPu"/>
+                                                            <constraint firstAttribute="bottom" secondItem="GYH-MX-QlU" secondAttribute="bottom" constant="13" id="Lmq-q9-BhM"/>
+                                                            <constraint firstItem="GYH-MX-QlU" firstAttribute="leading" secondItem="qVh-3p-lk1" secondAttribute="leading" constant="3" id="ajQ-jF-tq0"/>
+                                                            <constraint firstItem="GYH-MX-QlU" firstAttribute="centerY" secondItem="qVh-3p-lk1" secondAttribute="centerY" id="naY-MG-XfB"/>
+                                                            <constraint firstItem="GYH-MX-QlU" firstAttribute="centerX" secondItem="qVh-3p-lk1" secondAttribute="centerX" id="wxB-fd-7k9"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ns1-Qf-Dc9" firstAttribute="height" secondItem="T16-Uh-Sec" secondAttribute="height" id="7Sc-Jl-0Q7"/>
+                                    <constraint firstAttribute="bottom" secondItem="ns1-Qf-Dc9" secondAttribute="bottom" id="SPN-x5-7Lo"/>
+                                    <constraint firstItem="ns1-Qf-Dc9" firstAttribute="top" secondItem="G4n-v6-VLd" secondAttribute="top" id="SjO-wp-YYa"/>
+                                    <constraint firstItem="ns1-Qf-Dc9" firstAttribute="leading" secondItem="T16-Uh-Sec" secondAttribute="leading" id="Tf0-Sf-pJu"/>
+                                    <constraint firstAttribute="trailing" secondItem="ns1-Qf-Dc9" secondAttribute="trailing" id="UT2-FM-Xb2"/>
+                                    <constraint firstAttribute="height" constant="60" id="VF1-5o-708"/>
+                                    <constraint firstItem="ns1-Qf-Dc9" firstAttribute="width" secondItem="T16-Uh-Sec" secondAttribute="width" constant="30" id="vyJ-b6-vKr"/>
+                                    <constraint firstItem="ns1-Qf-Dc9" firstAttribute="top" secondItem="T16-Uh-Sec" secondAttribute="top" id="xKh-k3-iqg"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="WKm-eT-Qft"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="G4n-v6-VLd"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="a14-At-SBo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T16-Uh-Sec" firstAttribute="top" secondItem="a14-At-SBo" secondAttribute="top" id="21G-bL-ZT1"/>
+                            <constraint firstItem="T16-Uh-Sec" firstAttribute="trailing" secondItem="a14-At-SBo" secondAttribute="trailing" id="WnT-vv-2jL"/>
+                            <constraint firstItem="T16-Uh-Sec" firstAttribute="leading" secondItem="a14-At-SBo" secondAttribute="leading" id="exL-JB-bDC"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KMS-QJ-Ok8"/>
+                    <navigationItem key="navigationItem" id="nCK-2t-bDD">
+                        <leftBarButtonItems>
+                            <barButtonItem title="월계1동" style="plain" id="pEo-9U-YWQ">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="Rcf-4A-s0I">
+                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                <inset key="largeContentSizeImageInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem image="bell" catalog="system" id="I88-oG-lOh">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="list.bullet" catalog="system" id="hlT-Fc-Boi">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem systemItem="search" id="iVm-uC-GWX">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLp-bo-tba" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="376"/>
+            <point key="canvasLocation" x="457.97101449275368" y="375.66964285714283"/>
         </scene>
         <!--Item-->
         <scene sceneID="pgi-nw-i0R">

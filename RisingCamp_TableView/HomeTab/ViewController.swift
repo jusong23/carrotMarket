@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        tableView.register(
+        self.tableView?.delegate = self
+        self.tableView?.dataSource = self
+        tableView?.register(
             UINib(nibName: "HomeCell", bundle: nil),
             forCellReuseIdentifier: "HomeCell")
     }

@@ -16,6 +16,9 @@
 		9B5BEB33288BC73400413C20 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB31288BC73400413C20 /* HomeCell.swift */; };
 		9B5BEB34288BC73400413C20 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BEB32288BC73400413C20 /* HomeCell.xib */; };
 		9B700296288D3AA5006F838A /* DongNeTabStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B700295288D3AA5006F838A /* DongNeTabStruct.swift */; };
+		9B70029A288D3EAD006F838A /* IMG_1654.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B700297288D3EAD006F838A /* IMG_1654.jpg */; };
+		9B70029B288D3EAD006F838A /* IMG_1656.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B700298288D3EAD006F838A /* IMG_1656.jpg */; };
+		9B70029C288D3EAD006F838A /* IMG_1655.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B700299288D3EAD006F838A /* IMG_1655.jpg */; };
 		9B7BC216288CF5310064E6DA /* DongNeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BC214288CF5310064E6DA /* DongNeCell.swift */; };
 		9B7BC217288CF5310064E6DA /* DongNeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BC215288CF5310064E6DA /* DongNeCell.xib */; };
 		9B7BC21B288CF6BA0064E6DA /* DongNeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BC21A288CF6BA0064E6DA /* DongNeDataModel.swift */; };
@@ -23,9 +26,6 @@
 		9BA643FC288CF03200DE4E0E /* componentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA643FB288CF03200DE4E0E /* componentSetting.swift */; };
 		9BA643FE288CF2EB00DE4E0E /* DongNeLifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA643FD288CF2EB00DE4E0E /* DongNeLifeViewController.swift */; };
 		9BED18A7288BD4A300D48071 /* HomeTabDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BED18A6288BD4A300D48071 /* HomeTabDataModel.swift */; };
-		9BED18AC288BD87100D48071 /* IMG_1654.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BED18A9288BD87100D48071 /* IMG_1654.jpg */; };
-		9BED18AD288BD87100D48071 /* IMG_1655.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BED18AA288BD87100D48071 /* IMG_1655.jpg */; };
-		9BED18AE288BD87100D48071 /* IMG_1656.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BED18AB288BD87100D48071 /* IMG_1656.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +40,9 @@
 		9B5BEB31288BC73400413C20 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		9B5BEB32288BC73400413C20 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		9B700295288D3AA5006F838A /* DongNeTabStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeTabStruct.swift; sourceTree = "<group>"; };
+		9B700297288D3EAD006F838A /* IMG_1654.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1654.jpg; path = ../../../../../../.Trash/IMG_1654.jpg; sourceTree = "<group>"; };
+		9B700298288D3EAD006F838A /* IMG_1656.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1656.jpg; path = ../../../../../../.Trash/IMG_1656.jpg; sourceTree = "<group>"; };
+		9B700299288D3EAD006F838A /* IMG_1655.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1655.jpg; path = ../../../../../../.Trash/IMG_1655.jpg; sourceTree = "<group>"; };
 		9B7BC214288CF5310064E6DA /* DongNeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeCell.swift; sourceTree = "<group>"; };
 		9B7BC215288CF5310064E6DA /* DongNeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongNeCell.xib; sourceTree = "<group>"; };
 		9B7BC21A288CF6BA0064E6DA /* DongNeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeDataModel.swift; sourceTree = "<group>"; };
@@ -47,9 +50,6 @@
 		9BA643FB288CF03200DE4E0E /* componentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = componentSetting.swift; path = ../componentSetting.swift; sourceTree = "<group>"; };
 		9BA643FD288CF2EB00DE4E0E /* DongNeLifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeLifeViewController.swift; sourceTree = "<group>"; };
 		9BED18A6288BD4A300D48071 /* HomeTabDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabDataModel.swift; sourceTree = "<group>"; };
-		9BED18A9288BD87100D48071 /* IMG_1654.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1654.jpg; path = ../../../../../../Downloads/IMG_1654.jpg; sourceTree = "<group>"; };
-		9BED18AA288BD87100D48071 /* IMG_1655.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1655.jpg; path = ../../../../../../Downloads/IMG_1655.jpg; sourceTree = "<group>"; };
-		9BED18AB288BD87100D48071 /* IMG_1656.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1656.jpg; path = ../../../../../../Downloads/IMG_1656.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,9 +155,9 @@
 		9BED18A8288BD86600D48071 /* testImage */ = {
 			isa = PBXGroup;
 			children = (
-				9BED18A9288BD87100D48071 /* IMG_1654.jpg */,
-				9BED18AA288BD87100D48071 /* IMG_1655.jpg */,
-				9BED18AB288BD87100D48071 /* IMG_1656.jpg */,
+				9B700297288D3EAD006F838A /* IMG_1654.jpg */,
+				9B700299288D3EAD006F838A /* IMG_1655.jpg */,
+				9B700298288D3EAD006F838A /* IMG_1656.jpg */,
 			);
 			path = testImage;
 			sourceTree = "<group>";
@@ -221,13 +221,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B5BEB29288BC06900413C20 /* LaunchScreen.storyboard in Resources */,
-				9BED18AE288BD87100D48071 /* IMG_1656.jpg in Resources */,
+				9B70029B288D3EAD006F838A /* IMG_1656.jpg in Resources */,
 				9B7BC217288CF5310064E6DA /* DongNeCell.xib in Resources */,
-				9BED18AC288BD87100D48071 /* IMG_1654.jpg in Resources */,
+				9B70029A288D3EAD006F838A /* IMG_1654.jpg in Resources */,
 				9B5BEB26288BC06900413C20 /* Assets.xcassets in Resources */,
 				9B5BEB34288BC73400413C20 /* HomeCell.xib in Resources */,
-				9BED18AD288BD87100D48071 /* IMG_1655.jpg in Resources */,
 				9B5BEB24288BC06800413C20 /* Main.storyboard in Resources */,
+				9B70029C288D3EAD006F838A /* IMG_1655.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

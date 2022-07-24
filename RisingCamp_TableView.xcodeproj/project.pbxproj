@@ -15,9 +15,11 @@
 		9B5BEB29288BC06900413C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BEB27288BC06900413C20 /* LaunchScreen.storyboard */; };
 		9B5BEB33288BC73400413C20 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB31288BC73400413C20 /* HomeCell.swift */; };
 		9B5BEB34288BC73400413C20 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BEB32288BC73400413C20 /* HomeCell.xib */; };
+		9B700296288D3AA5006F838A /* DongNeTabStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B700295288D3AA5006F838A /* DongNeTabStruct.swift */; };
 		9B7BC216288CF5310064E6DA /* DongNeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BC214288CF5310064E6DA /* DongNeCell.swift */; };
 		9B7BC217288CF5310064E6DA /* DongNeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7BC215288CF5310064E6DA /* DongNeCell.xib */; };
 		9B7BC21B288CF6BA0064E6DA /* DongNeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BC21A288CF6BA0064E6DA /* DongNeDataModel.swift */; };
+		9B7BC21E288D14DB0064E6DA /* HomeTabStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BC21C288D0FED0064E6DA /* HomeTabStruct.swift */; };
 		9BA643FC288CF03200DE4E0E /* componentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA643FB288CF03200DE4E0E /* componentSetting.swift */; };
 		9BA643FE288CF2EB00DE4E0E /* DongNeLifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA643FD288CF2EB00DE4E0E /* DongNeLifeViewController.swift */; };
 		9BED18A7288BD4A300D48071 /* HomeTabDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BED18A6288BD4A300D48071 /* HomeTabDataModel.swift */; };
@@ -37,9 +39,11 @@
 		9B5BEB2A288BC06900413C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B5BEB31288BC73400413C20 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		9B5BEB32288BC73400413C20 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		9B700295288D3AA5006F838A /* DongNeTabStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeTabStruct.swift; sourceTree = "<group>"; };
 		9B7BC214288CF5310064E6DA /* DongNeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeCell.swift; sourceTree = "<group>"; };
 		9B7BC215288CF5310064E6DA /* DongNeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongNeCell.xib; sourceTree = "<group>"; };
 		9B7BC21A288CF6BA0064E6DA /* DongNeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeDataModel.swift; sourceTree = "<group>"; };
+		9B7BC21C288D0FED0064E6DA /* HomeTabStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabStruct.swift; sourceTree = "<group>"; };
 		9BA643FB288CF03200DE4E0E /* componentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = componentSetting.swift; path = ../componentSetting.swift; sourceTree = "<group>"; };
 		9BA643FD288CF2EB00DE4E0E /* DongNeLifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeLifeViewController.swift; sourceTree = "<group>"; };
 		9BED18A6288BD4A300D48071 /* HomeTabDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabDataModel.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 		9B5BEB1B288BC06800413C20 /* RisingCamp_TableView */ = {
 			isa = PBXGroup;
 			children = (
+				9B700292288D3A7B006F838A /* Model */,
 				9BA643FB288CF03200DE4E0E /* componentSetting.swift */,
 				9BED18A8288BD86600D48071 /* testImage */,
 				9B5BEB30288BC4F000413C20 /* HomeTab */,
@@ -88,8 +93,6 @@
 				9B5BEB25288BC06900413C20 /* Assets.xcassets */,
 				9B5BEB27288BC06900413C20 /* LaunchScreen.storyboard */,
 				9B5BEB2A288BC06900413C20 /* Info.plist */,
-				9BED18A6288BD4A300D48071 /* HomeTabDataModel.swift */,
-				9B7BC21A288CF6BA0064E6DA /* DongNeDataModel.swift */,
 			);
 			path = RisingCamp_TableView;
 			sourceTree = "<group>";
@@ -110,6 +113,33 @@
 				9B5BEB32288BC73400413C20 /* HomeCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9B700292288D3A7B006F838A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B700294288D3A8D006F838A /* DongNe */,
+				9B700293288D3A87006F838A /* Home */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B700293288D3A87006F838A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9BED18A6288BD4A300D48071 /* HomeTabDataModel.swift */,
+				9B7BC21C288D0FED0064E6DA /* HomeTabStruct.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9B700294288D3A8D006F838A /* DongNe */ = {
+			isa = PBXGroup;
+			children = (
+				9B7BC21A288CF6BA0064E6DA /* DongNeDataModel.swift */,
+				9B700295288D3AA5006F838A /* DongNeTabStruct.swift */,
+			);
+			path = DongNe;
 			sourceTree = "<group>";
 		};
 		9BA643FF288CF33300DE4E0E /* DongLeLifeTab */ = {
@@ -211,12 +241,14 @@
 				9BA643FC288CF03200DE4E0E /* componentSetting.swift in Sources */,
 				9B5BEB21288BC06800413C20 /* ViewController.swift in Sources */,
 				9B5BEB1D288BC06800413C20 /* AppDelegate.swift in Sources */,
+				9B700296288D3AA5006F838A /* DongNeTabStruct.swift in Sources */,
 				9BED18A7288BD4A300D48071 /* HomeTabDataModel.swift in Sources */,
 				9B5BEB33288BC73400413C20 /* HomeCell.swift in Sources */,
 				9B7BC21B288CF6BA0064E6DA /* DongNeDataModel.swift in Sources */,
 				9BA643FE288CF2EB00DE4E0E /* DongNeLifeViewController.swift in Sources */,
 				9B7BC216288CF5310064E6DA /* DongNeCell.swift in Sources */,
 				9B5BEB1F288BC06800413C20 /* SceneDelegate.swift in Sources */,
+				9B7BC21E288D14DB0064E6DA /* HomeTabStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

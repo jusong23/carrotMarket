@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B22178C288EADC400C86818 /* ChattingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22178A288EADC400C86818 /* ChattingCell.swift */; };
-		9B22178D288EADC400C86818 /* ChattingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B22178B288EADC400C86818 /* ChattingCell.xib */; };
 		9B221791288EAF8600C86818 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B221790288EAF8600C86818 /* ChattingViewController.swift */; };
+		9B221799288EB82900C86818 /* ChatStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B221798288EB82900C86818 /* ChatStruct.swift */; };
+		9B22179B288EB8B900C86818 /* ChatDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22179A288EB8B900C86818 /* ChatDataModel.swift */; };
+		9B22179E288EBA1900C86818 /* ChattingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22179C288EBA1900C86818 /* ChattingTableViewCell.swift */; };
+		9B22179F288EBA1900C86818 /* ChattingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B22179D288EBA1900C86818 /* ChattingTableViewCell.xib */; };
 		9B5BEB1D288BC06800413C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB1C288BC06800413C20 /* AppDelegate.swift */; };
 		9B5BEB1F288BC06800413C20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB1E288BC06800413C20 /* SceneDelegate.swift */; };
 		9B5BEB21288BC06800413C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB20288BC06800413C20 /* ViewController.swift */; };
@@ -37,9 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B22178A288EADC400C86818 /* ChattingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingCell.swift; sourceTree = "<group>"; };
-		9B22178B288EADC400C86818 /* ChattingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingCell.xib; sourceTree = "<group>"; };
 		9B221790288EAF8600C86818 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		9B221798288EB82900C86818 /* ChatStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStruct.swift; sourceTree = "<group>"; };
+		9B22179A288EB8B900C86818 /* ChatDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDataModel.swift; sourceTree = "<group>"; };
+		9B22179C288EBA1900C86818 /* ChattingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingTableViewCell.swift; sourceTree = "<group>"; };
+		9B22179D288EBA1900C86818 /* ChattingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingTableViewCell.xib; sourceTree = "<group>"; };
 		9B5BEB19288BC06800413C20 /* RisingCamp_TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RisingCamp_TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5BEB1C288BC06800413C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B5BEB1E288BC06800413C20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,8 +95,8 @@
 		9B221788288EADA600C86818 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				9B22178A288EADC400C86818 /* ChattingCell.swift */,
-				9B22178B288EADC400C86818 /* ChattingCell.xib */,
+				9B22179C288EBA1900C86818 /* ChattingTableViewCell.swift */,
+				9B22179D288EBA1900C86818 /* ChattingTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -100,8 +104,18 @@
 		9B221789288EADA900C86818 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9B221790288EAF8600C86818 /* ChattingViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B221794288EB73F00C86818 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				9B221798288EB82900C86818 /* ChatStruct.swift */,
+				9B22179A288EB8B900C86818 /* ChatDataModel.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		9B5BEB10288BC06800413C20 = {
@@ -123,16 +137,15 @@
 		9B5BEB1B288BC06800413C20 /* RisingCamp_TableView */ = {
 			isa = PBXGroup;
 			children = (
-				9B221787288EADA100C86818 /* Chatting */,
 				9B700292288D3A7B006F838A /* Model */,
 				9BED18A8288BD86600D48071 /* testImage */,
+				9B221787288EADA100C86818 /* Chatting */,
 				9BA643FF288CF33300DE4E0E /* DongLeLifeTab */,
 				9B5BEB30288BC4F000413C20 /* HomeTab */,
 				9BA643FB288CF03200DE4E0E /* componentSetting.swift */,
 				9B5BEB1C288BC06800413C20 /* AppDelegate.swift */,
 				9B5BEB1E288BC06800413C20 /* SceneDelegate.swift */,
 				9B5BEB22288BC06800413C20 /* Main.storyboard */,
-				9B221790288EAF8600C86818 /* ChattingViewController.swift */,
 				9B5BEB25288BC06900413C20 /* Assets.xcassets */,
 				9B5BEB27288BC06900413C20 /* LaunchScreen.storyboard */,
 				9B5BEB2A288BC06900413C20 /* Info.plist */,
@@ -163,6 +176,7 @@
 		9B700292288D3A7B006F838A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9B221794288EB73F00C86818 /* Chat */,
 				9B700294288D3A8D006F838A /* DongNe */,
 				9B700293288D3A87006F838A /* Home */,
 			);
@@ -299,9 +313,9 @@
 				9B5BEB26288BC06900413C20 /* Assets.xcassets in Resources */,
 				9B5BEB34288BC73400413C20 /* HomeCell.xib in Resources */,
 				9B5BEB24288BC06800413C20 /* Main.storyboard in Resources */,
+				9B22179F288EBA1900C86818 /* ChattingTableViewCell.xib in Resources */,
 				9B784E6D288D44B40027FB6D /* CategoryCell.xib in Resources */,
 				9B70029C288D3EAD006F838A /* IMG_1655.jpg in Resources */,
-				9B22178D288EADC400C86818 /* ChattingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,12 +329,14 @@
 				9BA643FC288CF03200DE4E0E /* componentSetting.swift in Sources */,
 				9B5BEB21288BC06800413C20 /* ViewController.swift in Sources */,
 				9B5BEB1D288BC06800413C20 /* AppDelegate.swift in Sources */,
+				9B22179B288EB8B900C86818 /* ChatDataModel.swift in Sources */,
 				9B784E6C288D44B40027FB6D /* CategoryCell.swift in Sources */,
 				9B700296288D3AA5006F838A /* DongNeTabStruct.swift in Sources */,
 				9BED18A7288BD4A300D48071 /* HomeTabDataModel.swift in Sources */,
+				9B221799288EB82900C86818 /* ChatStruct.swift in Sources */,
 				9B221791288EAF8600C86818 /* ChattingViewController.swift in Sources */,
 				9B5BEB33288BC73400413C20 /* HomeCell.swift in Sources */,
-				9B22178C288EADC400C86818 /* ChattingCell.swift in Sources */,
+				9B22179E288EBA1900C86818 /* ChattingTableViewCell.swift in Sources */,
 				9B784E68288D43DF0027FB6D /* ChooseCategoryViewController.swift in Sources */,
 				9B7BC21B288CF6BA0064E6DA /* DongNeDataModel.swift in Sources */,
 				9B784E6F288D45150027FB6D /* CategoryDataModel.swift in Sources */,

@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var HomeDataModel = HomeTabDataModel ()
     var dataModel = HomeTabDataModel()
     
     @IBOutlet weak var tableView: UITableView!
@@ -27,6 +28,9 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        var lastNumber = HomeDataModel.count
+        print(lastNumber)
+        print(HomeDataModel.getName(index: lastNumber - 1))
         self.tabBarController?.tabBar.isHidden = false
     }
     

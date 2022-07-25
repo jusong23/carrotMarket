@@ -8,8 +8,11 @@
 import UIKit
 
 class WriteForDealViewController: UIViewController {
-
+    
+    let HomeDataModel = HomeTabDataModel ()
     var dataModel = CategoryDataModel ()
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var priceTextField: UITextField!
     
     @IBOutlet weak var selectedCategory: UILabel!
     
@@ -25,6 +28,17 @@ class WriteForDealViewController: UIViewController {
             ChooseCategoryViewController.delegate = self
             self.navigationController?.pushViewController(ChooseCategoryViewController, animated: true)
     }
+    
+    @IBAction func tapCompleteButton(_ sender: Any) {
+        self.HomeDataModel.inputData(image: "IMG_1654.jpg", name: self.titleTextField.text ?? "", location: "신설동, 지금")
+        var lastNumber = HomeDataModel.count
+        print(lastNumber)
+        print(HomeDataModel.getName(index: lastNumber - 1))
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    
 }
 
 extension WriteForDealViewController: sendDataDelegate {

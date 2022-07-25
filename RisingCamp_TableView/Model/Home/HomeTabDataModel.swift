@@ -30,4 +30,9 @@ class HomeTabDataModel {
     public func getLocation(index: Int) -> String {
         return arrayHomeStruct[index].location
     }
+    
+    public func inputData(image: String, name: String, location: String) {
+        self.arrayHomeStruct.append(HomeTabStruct(image: image, name: name, location: name))
+    }
+    
 }

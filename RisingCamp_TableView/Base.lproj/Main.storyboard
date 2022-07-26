@@ -682,19 +682,41 @@
             </objects>
             <point key="canvasLocation" x="457.97101449275368" y="375.66964285714283"/>
         </scene>
-        <!--Item-->
+        <!--나의 당근-->
         <scene sceneID="pgi-nw-i0R">
             <objects>
                 <navigationController id="0wy-pX-FM0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3fU-i1-XFL"/>
+                    <tabBarItem key="tabBarItem" title="나의 당근" id="3fU-i1-XFL">
+                        <imageReference key="image" image="person" catalog="system" symbolScale="default"/>
+                        <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tfb-V7-mIQ">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="v2X-F1-i0m" kind="relationship" relationship="rootViewController" id="ezE-Hj-RxI"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0t-Pm-L32" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-323" y="2513"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="he6-Z9-cJs">
+            <objects>
+                <viewController id="v2X-F1-i0m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xZf-u0-ii9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ktZ-1T-Fak"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vGT-jH-SWc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jh-0Y-XjI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="2512"/>
         </scene>
         <!--Chatting View Controller-->
         <scene sceneID="jUD-zp-vBP">
@@ -734,11 +756,14 @@
             </objects>
             <point key="canvasLocation" x="456.92307692307691" y="1800.7109004739336"/>
         </scene>
-        <!--Item-->
+        <!--채팅-->
         <scene sceneID="KF2-yB-Ubq">
             <objects>
                 <navigationController id="5mN-Dn-5Db" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="kUF-j8-Gre"/>
+                    <tabBarItem key="tabBarItem" title="채팅" id="kUF-j8-Gre">
+                        <imageReference key="image" image="bubble.left.and.bubble.right" catalog="system" symbolScale="default"/>
+                        <imageReference key="selectedImage" image="bubble.left.and.bubble.right.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aad-qZ-xW7">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -751,11 +776,14 @@
             </objects>
             <point key="canvasLocation" x="-323" y="1801"/>
         </scene>
-        <!--Item-->
+        <!--내 근처-->
         <scene sceneID="JDX-Ak-sFI">
             <objects>
                 <navigationController id="eOF-gm-egd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="v5g-ur-Cn8"/>
+                    <tabBarItem key="tabBarItem" title="내 근처" id="v5g-ur-Cn8">
+                        <imageReference key="image" image="location.circle" catalog="system" symbolScale="default"/>
+                        <imageReference key="selectedImage" image="location.circle.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KYZ-eL-p5y">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -796,15 +824,21 @@
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="bubble.left.and.bubble.right" catalog="system" width="128" height="96"/>
+        <image name="bubble.left.and.bubble.right.fill" catalog="system" width="128" height="97"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="location.circle" catalog="system" width="128" height="121"/>
+        <image name="location.circle.fill" catalog="system" width="128" height="121"/>
         <image name="newspaper" catalog="system" width="128" height="111"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <image name="note.text" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="repeat" catalog="system" width="128" height="98"/>
         <image name="xmark" catalog="system" width="128" height="113"/>

@@ -12,6 +12,7 @@
 		9B22179B288EB8B900C86818 /* ChatDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22179A288EB8B900C86818 /* ChatDataModel.swift */; };
 		9B22179E288EBA1900C86818 /* ChattingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22179C288EBA1900C86818 /* ChattingTableViewCell.swift */; };
 		9B22179F288EBA1900C86818 /* ChattingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B22179D288EBA1900C86818 /* ChattingTableViewCell.xib */; };
+		9B2217C52890049400C86818 /* IMG_1394.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9B2217C42890049400C86818 /* IMG_1394.JPG */; };
 		9B5BEB1D288BC06800413C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB1C288BC06800413C20 /* AppDelegate.swift */; };
 		9B5BEB1F288BC06800413C20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB1E288BC06800413C20 /* SceneDelegate.swift */; };
 		9B5BEB21288BC06800413C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB20288BC06800413C20 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		9B22179A288EB8B900C86818 /* ChatDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDataModel.swift; sourceTree = "<group>"; };
 		9B22179C288EBA1900C86818 /* ChattingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingTableViewCell.swift; sourceTree = "<group>"; };
 		9B22179D288EBA1900C86818 /* ChattingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingTableViewCell.xib; sourceTree = "<group>"; };
+		9B2217C42890049400C86818 /* IMG_1394.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1394.JPG; path = ../../../../../../Downloads/IMG_1394.JPG; sourceTree = "<group>"; };
 		9B5BEB19288BC06800413C20 /* RisingCamp_TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RisingCamp_TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5BEB1C288BC06800413C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B5BEB1E288BC06800413C20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 		9BED18A8288BD86600D48071 /* testImage */ = {
 			isa = PBXGroup;
 			children = (
+				9B2217C42890049400C86818 /* IMG_1394.JPG */,
 				9B700297288D3EAD006F838A /* IMG_1654.jpg */,
 				9B700299288D3EAD006F838A /* IMG_1655.jpg */,
 				9B700298288D3EAD006F838A /* IMG_1656.jpg */,
@@ -311,6 +314,7 @@
 				9B7BC217288CF5310064E6DA /* DongNeCell.xib in Resources */,
 				9B70029A288D3EAD006F838A /* IMG_1654.jpg in Resources */,
 				9B5BEB26288BC06900413C20 /* Assets.xcassets in Resources */,
+				9B2217C52890049400C86818 /* IMG_1394.JPG in Resources */,
 				9B5BEB34288BC73400413C20 /* HomeCell.xib in Resources */,
 				9B5BEB24288BC06800413C20 /* Main.storyboard in Resources */,
 				9B22179F288EBA1900C86818 /* ChattingTableViewCell.xib in Resources */,

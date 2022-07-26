@@ -34,7 +34,8 @@ class WriteForDealViewController: UIViewController {
 //        var lastNumber = HomeDataModel.count
 //        print(lastNumber)
 //        print(HomeDataModel.getName(index: lastNumber - 1))
-        NotificationCenter.default.post(name: NSNotification.Name("price"), object: nil, userInfo: ["price":self.priceTextField.text])
+//        NotificationCenter.default.post(name: NSNotification.Name("title"), object: nil, userInfo: ["title":self.titleTextField.text ?? ""])
+        NotificationCenter.default.post(name: NSNotification.Name("price"), object: nil, userInfo: ["price":self.priceTextField.text ?? ""])
         self.navigationController?.popViewController(animated: true)
     }
     

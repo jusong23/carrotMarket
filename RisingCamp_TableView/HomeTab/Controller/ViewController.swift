@@ -25,19 +25,22 @@ class ViewController: UIViewController {
             UINib(nibName: "HomeCell", bundle: nil),
             forCellReuseIdentifier: "HomeCell")
         
-        
+//        NotificationCenter.default.addObserver(self, selector: #selector(test(_:)), name: NSNotification.Name("title"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(test(_:)), name: NSNotification.Name("price"), object: nil)
         
     }
     
     @objc func test(_ notification:NSNotification){
+//        guard let title = notification.userInfo!["title"] as? String else {return}
         guard let price = notification.userInfo!["price"] as? String else {return}
-        self.HomeDataModel.inputData(image: "IMG_1654.jpg", name: "제발", location: "돼라", price: price)
+//        print(title)
+        print(price)
+        self.HomeDataModel.inputData(image: "IMG_1394.JPG", name: "진한 청사과", location: "월계동, 지금", price: price)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.HomeDataModel.arrayHomeStruct.reverse()
-        self.tableView.reloadData()
+        self.tableView?.reloadData()
         var lastNumber = HomeDataModel.count
         print(lastNumber)
         print(HomeDataModel.getName(index: lastNumber - 1))

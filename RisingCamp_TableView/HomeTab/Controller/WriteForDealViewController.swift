@@ -10,6 +10,7 @@ import UIKit
 class WriteForDealViewController: UIViewController {
     
     let HomeDataModel = HomeTabDataModel ()
+
     var dataModel = CategoryDataModel ()
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
@@ -30,10 +31,10 @@ class WriteForDealViewController: UIViewController {
     }
     
     @IBAction func tapCompleteButton(_ sender: Any) {
-        self.HomeDataModel.inputData(image: "IMG_1654.jpg", name: self.titleTextField.text ?? "", location: "신설동, 지금")
-        var lastNumber = HomeDataModel.count
-        print(lastNumber)
-        print(HomeDataModel.getName(index: lastNumber - 1))
+//        var lastNumber = HomeDataModel.count
+//        print(lastNumber)
+//        print(HomeDataModel.getName(index: lastNumber - 1))
+        NotificationCenter.default.post(name: NSNotification.Name("price"), object: nil, userInfo: ["price":self.priceTextField.text])
         self.navigationController?.popViewController(animated: true)
     }
     

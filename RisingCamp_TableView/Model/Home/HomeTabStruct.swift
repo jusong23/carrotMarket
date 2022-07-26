@@ -11,6 +11,7 @@ struct HomeTabStruct {
     var image: String
     var name: String
     var location: String
+    var price: String
 }
 
 

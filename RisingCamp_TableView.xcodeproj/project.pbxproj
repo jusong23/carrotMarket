@@ -206,8 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				9B5BEB20288BC06800413C20 /* ViewController.swift */,
-				9B784E67288D43DF0027FB6D /* ChooseCategoryViewController.swift */,
 				9B784E65288D3F870027FB6D /* WriteForDealViewController.swift */,
+				9B784E67288D43DF0027FB6D /* ChooseCategoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

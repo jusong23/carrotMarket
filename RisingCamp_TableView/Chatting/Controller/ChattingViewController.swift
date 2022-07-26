@@ -37,7 +37,6 @@ extension ChattingViewController: UITableViewDelegate, UITableViewDataSource {
         cell.nickName.text = dataModel.getNickName(index: indexPath.row)
         cell.location.text = dataModel.getLocation(index: indexPath.row)
         cell.message.text = dataModel.getMessage(index: indexPath.row)
-
         return cell
     }
     

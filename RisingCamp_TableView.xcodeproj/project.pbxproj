@@ -14,6 +14,12 @@
 		9B22179F288EBA1900C86818 /* ChattingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B22179D288EBA1900C86818 /* ChattingTableViewCell.xib */; };
 		9B2217C52890049400C86818 /* IMG_1394.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9B2217C42890049400C86818 /* IMG_1394.JPG */; };
 		9B2217C72891125500C86818 /* MyCarrotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217C62891125500C86818 /* MyCarrotViewController.swift */; };
+		9B2217CD2891171E00C86818 /* MyCarrotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217CB2891171E00C86818 /* MyCarrotCell.swift */; };
+		9B2217CE2891171E00C86818 /* MyCarrotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2217CC2891171E00C86818 /* MyCarrotCell.xib */; };
+		9B2217D528912C6500C86818 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217D328912C6500C86818 /* ProfileCell.swift */; };
+		9B2217D628912C6500C86818 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2217D428912C6500C86818 /* ProfileCell.xib */; };
+		9B2217DB289130F600C86818 /* SettingSectionStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217DA289130F600C86818 /* SettingSectionStruct.swift */; };
+		9B2217DD289136B600C86818 /* MyCarrotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217DC289136B600C86818 /* MyCarrotModel.swift */; };
 		9B5BEB1D288BC06800413C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB1C288BC06800413C20 /* AppDelegate.swift */; };
 		9B5BEB1F288BC06800413C20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB1E288BC06800413C20 /* SceneDelegate.swift */; };
 		9B5BEB21288BC06800413C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB20288BC06800413C20 /* ViewController.swift */; };
@@ -48,6 +54,12 @@
 		9B22179D288EBA1900C86818 /* ChattingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingTableViewCell.xib; sourceTree = "<group>"; };
 		9B2217C42890049400C86818 /* IMG_1394.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1394.JPG; path = ../../../../../../Downloads/IMG_1394.JPG; sourceTree = "<group>"; };
 		9B2217C62891125500C86818 /* MyCarrotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarrotViewController.swift; sourceTree = "<group>"; };
+		9B2217CB2891171E00C86818 /* MyCarrotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarrotCell.swift; sourceTree = "<group>"; };
+		9B2217CC2891171E00C86818 /* MyCarrotCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCarrotCell.xib; sourceTree = "<group>"; };
+		9B2217D328912C6500C86818 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		9B2217D428912C6500C86818 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		9B2217DA289130F600C86818 /* SettingSectionStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSectionStruct.swift; sourceTree = "<group>"; };
+		9B2217DC289136B600C86818 /* MyCarrotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarrotModel.swift; sourceTree = "<group>"; };
 		9B5BEB19288BC06800413C20 /* RisingCamp_TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RisingCamp_TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5BEB1C288BC06800413C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B5BEB1E288BC06800413C20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +146,10 @@
 		9B2217C92891127000C86818 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				9B2217CB2891171E00C86818 /* MyCarrotCell.swift */,
+				9B2217CC2891171E00C86818 /* MyCarrotCell.xib */,
+				9B2217D328912C6500C86818 /* ProfileCell.swift */,
+				9B2217D428912C6500C86818 /* ProfileCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -144,6 +160,15 @@
 				9B2217C62891125500C86818 /* MyCarrotViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B2217D72891303400C86818 /* MyCarrot */ = {
+			isa = PBXGroup;
+			children = (
+				9B2217DA289130F600C86818 /* SettingSectionStruct.swift */,
+				9B2217DC289136B600C86818 /* MyCarrotModel.swift */,
+			);
+			path = MyCarrot;
 			sourceTree = "<group>";
 		};
 		9B5BEB10288BC06800413C20 = {
@@ -165,9 +190,9 @@
 		9B5BEB1B288BC06800413C20 /* RisingCamp_TableView */ = {
 			isa = PBXGroup;
 			children = (
-				9B2217C82891126800C86818 /* MyCattotTab */,
 				9B700292288D3A7B006F838A /* Model */,
 				9BED18A8288BD86600D48071 /* testImage */,
+				9B2217C82891126800C86818 /* MyCattotTab */,
 				9B221787288EADA100C86818 /* Chatting */,
 				9BA643FF288CF33300DE4E0E /* DongLeLifeTab */,
 				9B5BEB30288BC4F000413C20 /* HomeTab */,
@@ -205,6 +230,7 @@
 		9B700292288D3A7B006F838A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9B2217D72891303400C86818 /* MyCarrot */,
 				9B221794288EB73F00C86818 /* Chat */,
 				9B700294288D3A8D006F838A /* DongNe */,
 				9B700293288D3A87006F838A /* Home */,
@@ -342,6 +368,8 @@
 				9B70029A288D3EAD006F838A /* IMG_1654.jpg in Resources */,
 				9B5BEB26288BC06900413C20 /* Assets.xcassets in Resources */,
 				9B2217C52890049400C86818 /* IMG_1394.JPG in Resources */,
+				9B2217CE2891171E00C86818 /* MyCarrotCell.xib in Resources */,
+				9B2217D628912C6500C86818 /* ProfileCell.xib in Resources */,
 				9B5BEB34288BC73400413C20 /* HomeCell.xib in Resources */,
 				9B5BEB24288BC06800413C20 /* Main.storyboard in Resources */,
 				9B22179F288EBA1900C86818 /* ChattingTableViewCell.xib in Resources */,
@@ -360,14 +388,18 @@
 				9BA643FC288CF03200DE4E0E /* componentSetting.swift in Sources */,
 				9B5BEB21288BC06800413C20 /* ViewController.swift in Sources */,
 				9B5BEB1D288BC06800413C20 /* AppDelegate.swift in Sources */,
+				9B2217D528912C6500C86818 /* ProfileCell.swift in Sources */,
 				9B22179B288EB8B900C86818 /* ChatDataModel.swift in Sources */,
+				9B2217CD2891171E00C86818 /* MyCarrotCell.swift in Sources */,
 				9B784E6C288D44B40027FB6D /* CategoryCell.swift in Sources */,
 				9B700296288D3AA5006F838A /* DongNeTabStruct.swift in Sources */,
+				9B2217DD289136B600C86818 /* MyCarrotModel.swift in Sources */,
 				9BED18A7288BD4A300D48071 /* HomeTabDataModel.swift in Sources */,
 				9B221799288EB82900C86818 /* ChatStruct.swift in Sources */,
 				9B221791288EAF8600C86818 /* ChattingViewController.swift in Sources */,
 				9B5BEB33288BC73400413C20 /* HomeCell.swift in Sources */,
 				9B22179E288EBA1900C86818 /* ChattingTableViewCell.swift in Sources */,
+				9B2217DB289130F600C86818 /* SettingSectionStruct.swift in Sources */,
 				9B784E68288D43DF0027FB6D /* ChooseCategoryViewController.swift in Sources */,
 				9B7BC21B288CF6BA0064E6DA /* DongNeDataModel.swift in Sources */,
 				9B784E6F288D45150027FB6D /* CategoryDataModel.swift in Sources */,

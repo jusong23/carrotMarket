@@ -693,7 +693,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tfb-V7-mIQ">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.1919325382" green="0.46098825059999998" blue="0.88986904089999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <connections>
                         <segue destination="v2X-F1-i0m" kind="relationship" relationship="rootViewController" id="ezE-Hj-RxI"/>
@@ -703,15 +702,28 @@
             </objects>
             <point key="canvasLocation" x="-323" y="2513"/>
         </scene>
-        <!--View Controller-->
+        <!--My Carrot View Controller-->
         <scene sceneID="he6-Z9-cJs">
             <objects>
-                <viewController id="v2X-F1-i0m" sceneMemberID="viewController">
+                <viewController id="v2X-F1-i0m" customClass="MyCarrotViewController" customModule="RisingCamp_TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xZf-u0-ii9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LDO-Nj-bdE">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ktZ-1T-Fak"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LDO-Nj-bdE" firstAttribute="top" secondItem="ktZ-1T-Fak" secondAttribute="top" id="lE0-do-WHJ"/>
+                            <constraint firstItem="LDO-Nj-bdE" firstAttribute="trailing" secondItem="ktZ-1T-Fak" secondAttribute="trailing" id="mnE-OA-UpD"/>
+                            <constraint firstItem="LDO-Nj-bdE" firstAttribute="leading" secondItem="ktZ-1T-Fak" secondAttribute="leading" id="sxP-El-vxJ"/>
+                            <constraint firstItem="LDO-Nj-bdE" firstAttribute="bottom" secondItem="ktZ-1T-Fak" secondAttribute="bottom" id="t0e-x4-4Iv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pm6-cz-Kk9">
                         <barButtonItem key="leftBarButtonItem" title="나의 당근" id="Ff1-fp-ZwY">
@@ -721,10 +733,13 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="LDO-Nj-bdE" id="G5H-yd-v5l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jh-0Y-XjI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="2512"/>
+            <point key="canvasLocation" x="456.92307692307691" y="2511.6113744075828"/>
         </scene>
         <!--Chatting View Controller-->
         <scene sceneID="jUD-zp-vBP">

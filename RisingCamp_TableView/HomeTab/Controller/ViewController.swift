@@ -26,16 +26,14 @@ class ViewController: UIViewController {
             forCellReuseIdentifier: "HomeCell")
         
 //        NotificationCenter.default.addObserver(self, selector: #selector(test(_:)), name: NSNotification.Name("title"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(test(_:)), name: NSNotification.Name("price"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(test(_:)), name: NSNotification.Name("Write"), object: nil)
         
     }
     
     @objc func test(_ notification:NSNotification){
-//        guard let title = notification.userInfo!["title"] as? String else {return}
+        guard let title = notification.userInfo!["title"] as? String else {return}
         guard let price = notification.userInfo!["price"] as? String else {return}
-//        print(title)
-        print(price)
-        self.HomeDataModel.inputData(image: "IMG_1394.JPG", name: "진한 청사과", location: "월계동, 지금", price: price)
+        self.HomeDataModel.inputData(image: "IMG_1394.JPG", name: title, location: "월계동, 지금", price: price)
     }
     
     override func viewWillAppear(_ animated: Bool) {

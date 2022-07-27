@@ -10,7 +10,7 @@ import Foundation
 class HomeTabDataModel {
     
     public var arrayHomeStruct: [HomeTabStruct] = [
-    HomeTabStruct(image: "IMG_1654.jpg", name: "43인치 TV", location: "묵동, 10분전", price: "43,000원"),
+        HomeTabStruct(image: "IMG_1654.jpg", name: "43인치 TV", location: "묵동, 10분전", price: "43,000원"),
         HomeTabStruct(image: "IMG_1656.jpg", name: "책상 세트", location: "월계동, 끌올 7분전", price: "22,000원"),
         HomeTabStruct(image: "IMG_1655.jpg", name: "엔테이 포켓몬", location: "하계동, 4분전", price: "1,000원")
    ]

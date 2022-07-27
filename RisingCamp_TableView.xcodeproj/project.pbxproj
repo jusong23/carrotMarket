@@ -13,6 +13,7 @@
 		9B22179E288EBA1900C86818 /* ChattingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22179C288EBA1900C86818 /* ChattingTableViewCell.swift */; };
 		9B22179F288EBA1900C86818 /* ChattingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B22179D288EBA1900C86818 /* ChattingTableViewCell.xib */; };
 		9B2217C52890049400C86818 /* IMG_1394.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9B2217C42890049400C86818 /* IMG_1394.JPG */; };
+		9B2217C72891125500C86818 /* MyCarrotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217C62891125500C86818 /* MyCarrotViewController.swift */; };
 		9B5BEB1D288BC06800413C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB1C288BC06800413C20 /* AppDelegate.swift */; };
 		9B5BEB1F288BC06800413C20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB1E288BC06800413C20 /* SceneDelegate.swift */; };
 		9B5BEB21288BC06800413C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB20288BC06800413C20 /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		9B22179C288EBA1900C86818 /* ChattingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingTableViewCell.swift; sourceTree = "<group>"; };
 		9B22179D288EBA1900C86818 /* ChattingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingTableViewCell.xib; sourceTree = "<group>"; };
 		9B2217C42890049400C86818 /* IMG_1394.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1394.JPG; path = ../../../../../../Downloads/IMG_1394.JPG; sourceTree = "<group>"; };
+		9B2217C62891125500C86818 /* MyCarrotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarrotViewController.swift; sourceTree = "<group>"; };
 		9B5BEB19288BC06800413C20 /* RisingCamp_TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RisingCamp_TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5BEB1C288BC06800413C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B5BEB1E288BC06800413C20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,30 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		9B2217C82891126800C86818 /* MyCattotTab */ = {
+			isa = PBXGroup;
+			children = (
+				9B2217CA2891127400C86818 /* Controller */,
+				9B2217C92891127000C86818 /* Cell */,
+			);
+			path = MyCattotTab;
+			sourceTree = "<group>";
+		};
+		9B2217C92891127000C86818 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9B2217CA2891127400C86818 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B2217C62891125500C86818 /* MyCarrotViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9B5BEB10288BC06800413C20 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +165,7 @@
 		9B5BEB1B288BC06800413C20 /* RisingCamp_TableView */ = {
 			isa = PBXGroup;
 			children = (
+				9B2217C82891126800C86818 /* MyCattotTab */,
 				9B700292288D3A7B006F838A /* Model */,
 				9BED18A8288BD86600D48071 /* testImage */,
 				9B221787288EADA100C86818 /* Chatting */,
@@ -345,6 +372,7 @@
 				9B7BC21B288CF6BA0064E6DA /* DongNeDataModel.swift in Sources */,
 				9B784E6F288D45150027FB6D /* CategoryDataModel.swift in Sources */,
 				9BA643FE288CF2EB00DE4E0E /* DongNeLifeViewController.swift in Sources */,
+				9B2217C72891125500C86818 /* MyCarrotViewController.swift in Sources */,
 				9B784E66288D3F870027FB6D /* WriteForDealViewController.swift in Sources */,
 				9B7BC216288CF5310064E6DA /* DongNeCell.swift in Sources */,
 				9B5BEB1F288BC06800413C20 /* SceneDelegate.swift in Sources */,

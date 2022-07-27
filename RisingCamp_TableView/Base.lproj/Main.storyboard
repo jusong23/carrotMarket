@@ -693,6 +693,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tfb-V7-mIQ">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1919325382" green="0.46098825059999998" blue="0.88986904089999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <connections>
                         <segue destination="v2X-F1-i0m" kind="relationship" relationship="rootViewController" id="ezE-Hj-RxI"/>
@@ -712,7 +713,14 @@
                         <viewLayoutGuide key="safeArea" id="ktZ-1T-Fak"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vGT-jH-SWc"/>
+                    <navigationItem key="navigationItem" id="Pm6-cz-Kk9">
+                        <barButtonItem key="leftBarButtonItem" title="나의 당근" id="Ff1-fp-ZwY">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="gear.circle" catalog="system" id="c6e-y7-Qo1">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jh-0Y-XjI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -829,6 +837,7 @@
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="gear.circle" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>

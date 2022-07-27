@@ -20,6 +20,7 @@ class ChattingViewController: UIViewController {
         tableView?.register(
             UINib(nibName: "ChattingTableViewCell", bundle: nil),
             forCellReuseIdentifier: "ChattingTableViewCell")
+        
     }
     
     

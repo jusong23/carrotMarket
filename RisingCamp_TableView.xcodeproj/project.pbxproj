@@ -28,6 +28,10 @@
 		9B5BEB29288BC06900413C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BEB27288BC06900413C20 /* LaunchScreen.storyboard */; };
 		9B5BEB33288BC73400413C20 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BEB31288BC73400413C20 /* HomeCell.swift */; };
 		9B5BEB34288BC73400413C20 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BEB32288BC73400413C20 /* HomeCell.xib */; };
+		9B62F459289234AD00AB88DD /* IMG_1693.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B62F455289234AA00AB88DD /* IMG_1693.jpg */; };
+		9B62F45A289234AD00AB88DD /* IMG_1692.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B62F456289234AC00AB88DD /* IMG_1692.jpg */; };
+		9B62F45B289234AD00AB88DD /* IMG_1695.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B62F457289234AC00AB88DD /* IMG_1695.jpg */; };
+		9B62F45C289234AD00AB88DD /* IMG_1694.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B62F458289234AC00AB88DD /* IMG_1694.jpg */; };
 		9B700296288D3AA5006F838A /* DongNeTabStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B700295288D3AA5006F838A /* DongNeTabStruct.swift */; };
 		9B70029A288D3EAD006F838A /* IMG_1654.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B700297288D3EAD006F838A /* IMG_1654.jpg */; };
 		9B70029B288D3EAD006F838A /* IMG_1656.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B700298288D3EAD006F838A /* IMG_1656.jpg */; };
@@ -70,6 +74,10 @@
 		9B5BEB2A288BC06900413C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B5BEB31288BC73400413C20 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		9B5BEB32288BC73400413C20 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		9B62F455289234AA00AB88DD /* IMG_1693.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1693.jpg; path = ../../../../../../Downloads/IMG_1693.jpg; sourceTree = "<group>"; };
+		9B62F456289234AC00AB88DD /* IMG_1692.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1692.jpg; path = ../../../../../../Downloads/IMG_1692.jpg; sourceTree = "<group>"; };
+		9B62F457289234AC00AB88DD /* IMG_1695.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1695.jpg; path = ../../../../../../Downloads/IMG_1695.jpg; sourceTree = "<group>"; };
+		9B62F458289234AC00AB88DD /* IMG_1694.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1694.jpg; path = ../../../../../../Downloads/IMG_1694.jpg; sourceTree = "<group>"; };
 		9B700295288D3AA5006F838A /* DongNeTabStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeTabStruct.swift; sourceTree = "<group>"; };
 		9B700297288D3EAD006F838A /* IMG_1654.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1654.jpg; path = ../../../../../../.Trash/IMG_1654.jpg; sourceTree = "<group>"; };
 		9B700298288D3EAD006F838A /* IMG_1656.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1656.jpg; path = ../../../../../../.Trash/IMG_1656.jpg; sourceTree = "<group>"; };
@@ -296,6 +304,10 @@
 		9BED18A8288BD86600D48071 /* testImage */ = {
 			isa = PBXGroup;
 			children = (
+				9B62F456289234AC00AB88DD /* IMG_1692.jpg */,
+				9B62F455289234AA00AB88DD /* IMG_1693.jpg */,
+				9B62F458289234AC00AB88DD /* IMG_1694.jpg */,
+				9B62F457289234AC00AB88DD /* IMG_1695.jpg */,
 				9B2217C42890049400C86818 /* IMG_1394.JPG */,
 				9B700297288D3EAD006F838A /* IMG_1654.jpg */,
 				9B700299288D3EAD006F838A /* IMG_1655.jpg */,
@@ -363,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B5BEB29288BC06900413C20 /* LaunchScreen.storyboard in Resources */,
+				9B62F45A289234AD00AB88DD /* IMG_1692.jpg in Resources */,
 				9B70029B288D3EAD006F838A /* IMG_1656.jpg in Resources */,
 				9B7BC217288CF5310064E6DA /* DongNeCell.xib in Resources */,
 				9B70029A288D3EAD006F838A /* IMG_1654.jpg in Resources */,
@@ -370,8 +383,11 @@
 				9B2217C52890049400C86818 /* IMG_1394.JPG in Resources */,
 				9B2217CE2891171E00C86818 /* MyCarrotCell.xib in Resources */,
 				9B2217D628912C6500C86818 /* ProfileCell.xib in Resources */,
+				9B62F45C289234AD00AB88DD /* IMG_1694.jpg in Resources */,
 				9B5BEB34288BC73400413C20 /* HomeCell.xib in Resources */,
 				9B5BEB24288BC06800413C20 /* Main.storyboard in Resources */,
+				9B62F459289234AD00AB88DD /* IMG_1693.jpg in Resources */,
+				9B62F45B289234AD00AB88DD /* IMG_1695.jpg in Resources */,
 				9B22179F288EBA1900C86818 /* ChattingTableViewCell.xib in Resources */,
 				9B784E6D288D44B40027FB6D /* CategoryCell.xib in Resources */,
 				9B70029C288D3EAD006F838A /* IMG_1655.jpg in Resources */,

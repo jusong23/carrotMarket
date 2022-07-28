@@ -37,31 +37,4 @@ class MyCarrotDatamodel {
         SectionModel(buttonSystemImage: "beats.headphones", text: "자주 묻는 질문"),
         SectionModel(buttonSystemImage: "gearshape", text: "앱 설정")
     ]
-    
-    
-    
-//    public var count: Int {
-//        return arrayHomeStruct.count
-//    }
-//
-//    public func getImage(index: Int) -> String {
-//        return arrayHomeStruct[index].image
-//    }
-//
-//    public func getName(index: Int) -> String {
-//        return arrayHomeStruct[index].name
-//    }
-//
-//    public func getLocation(index: Int) -> String {
-//        return arrayHomeStruct[index].location
-//    }
-//
-//    public func getPrice(index: Int) -> String {
-//        return arrayHomeStruct[index].price
-//    }
-//
-//    public func inputData(image: String, name: String, location: String, price: String) {
-//        self.arrayHomeStruct.append(HomeTabStruct(image: image, name: name, location: location, price: price))
-//    }
-    
 }

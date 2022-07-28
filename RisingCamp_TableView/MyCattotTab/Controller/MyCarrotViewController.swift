@@ -23,23 +23,19 @@ class MyCarrotViewController: UIViewController {
         tableView?.register(
             UINib(nibName: "MyCarrotCell", bundle: nil),
             forCellReuseIdentifier: "MyCarrotCell")
-        
     }
-
-    
 }
 
 
 extension MyCarrotViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return .leastNormalMagnitude
-    }
-    
-    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        return .leastNormalMagnitude
-    }
-    
+        func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+            return .leastNormalMagnitude
+        }
+        
+        func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+            return .leastNormalMagnitude
+        }
     
         func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
             return 0
@@ -85,8 +81,6 @@ extension MyCarrotViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
           return 40
       }
-    
-    
 }
 
 // 섹션 넘버 0일때는 프로필 셀 따로 집어넣기

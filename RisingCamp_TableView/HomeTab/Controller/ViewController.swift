@@ -12,12 +12,9 @@ class ViewController: UIViewController {
     var HomeDataModel = HomeTabDataModel ()
 //    var clickedModel = [ClickedModel] = []
     
-    var images = ["IMG_1692.jpg", "IMG_1693.jpg", "IMG_1694.jpg", "IMG_1695.jpg" ]
 
     
-    @IBOutlet weak var controlImages: UIImageView!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var pageController: UIPageControl!
     
     @IBOutlet weak var searchBarButton: UIBarButtonItem!
     @IBOutlet weak var listBarButton: UIBarButtonItem!
@@ -45,6 +42,10 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.HomeDataModel.arrayHomeStruct.reverse()
+        if UserDefaults.standard.integer(forKey: "DeleteKey") == 1 {
+            self.HomeDataModel.removeData()
+            UserDefaults.standard.setValue(0, forKey: "DeleteKey")
+        }
         self.tableView?.reloadData()
         var lastNumber = HomeDataModel.count
         print(lastNumber)
@@ -52,11 +53,7 @@ class ViewController: UIViewController {
         print(HomeDataModel.getPrice(index: lastNumber - 1))
         self.tabBarController?.tabBar.isHidden = false
     }
-    
-    
-    @IBAction func pageChanged(_ sender: UIPageControl) {
-        controlImages.image = UIImage(named: images[pageController.currentPage])
-    }
+
     
 }
 
@@ -94,12 +91,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         NotificationCenter.default.post(name: NSNotification.Name("Detail"), object: nil, userInfo: ["Image": cellImage ?? "",
             "Name":cellName ?? ""])
         
-        
         guard let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeDetailViewController") as? HomeDetailViewController else {return}
             self.navigationController?.pushViewController(ViewController, animated: true)
-
-//        NotificationCenter.default.post(name: NSNotification.Name("Write"), object: nil, userInfo: ["title":self.titleTextField.text ?? "",
-//            "price":self.priceTextField.text ?? ""]
     } // 해당 인덱스의 사진 제목을 넘길 것임
 }
 

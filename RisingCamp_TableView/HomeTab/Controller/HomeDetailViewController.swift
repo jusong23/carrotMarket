@@ -33,7 +33,7 @@ class HomeDetailViewController: UIViewController {
     }
 
     @IBAction func tapBackButton(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func test(_ notification:NSNotification){
@@ -41,15 +41,8 @@ class HomeDetailViewController: UIViewController {
         guard let image = notification.userInfo!["Image"] as? String else {return}
         guard let name = notification.userInfo!["Name"] as? String else {return}
         self.clickedDataModel.inputData(image: image, name: name)
-        print(name)
-
-//        self.makeImageAndName()
+        print(image)
     }
-    
-//    func makeImageAndName() {
-//        self.image.image = UIImage(named: clickedDataModel.arrayStruct[1].image ?? "")
-//        self.nameLabel.text = clickedDataModel.arrayStruct[1].name ?? ""
-//    }
     
     func showAlertController(style: UIAlertController.Style) {
         
@@ -83,7 +76,9 @@ class HomeDetailViewController: UIViewController {
         let button5: UIAlertAction
         // handler는 alert action이 선택됐을때, OK버튼이 실행된다면
         // 실행될 코드 블럭을 의미한다
-        button5 = UIAlertAction(title: "삭제", style: UIAlertAction.Style.default, handler: { (action: UIAlertAction) in print("OK pressed2")
+        button5 = UIAlertAction(title: "삭제", style: UIAlertAction.Style.default, handler: { (action: UIAlertAction) in
+            UserDefaults.standard.setValue(1, forKey: "DeleteKey")
+            self.navigationController?.popViewController(animated: true)
         })
         button5.setValue(UIColor.red, forKey: "titleTextColor")
 

@@ -49,6 +49,7 @@
 		9BA643FE288CF2EB00DE4E0E /* DongNeLifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA643FD288CF2EB00DE4E0E /* DongNeLifeViewController.swift */; };
 		9BB9423C2893890F0005843B /* ClickedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9423B2893890F0005843B /* ClickedModel.swift */; };
 		9BB9423E28938EB50005843B /* ClickedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9423D28938EB50005843B /* ClickedDataModel.swift */; };
+		9BB942422893AA040005843B /* MyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB942412893AA040005843B /* MyLocationViewController.swift */; };
 		9BE9FED42893694800C6C49C /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9FED32893694800C6C49C /* HomeDetailViewController.swift */; };
 		9BE9FED62893766D00C6C49C /* IMG_1706.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE9FED52893766D00C6C49C /* IMG_1706.jpg */; };
 		9BE9FED8289382C700C6C49C /* IMG_1707.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE9FED7289382C700C6C49C /* IMG_1707.jpg */; };
@@ -100,6 +101,7 @@
 		9BA643FD288CF2EB00DE4E0E /* DongNeLifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeLifeViewController.swift; sourceTree = "<group>"; };
 		9BB9423B2893890F0005843B /* ClickedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickedModel.swift; sourceTree = "<group>"; };
 		9BB9423D28938EB50005843B /* ClickedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickedDataModel.swift; sourceTree = "<group>"; };
+		9BB942412893AA040005843B /* MyLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationViewController.swift; sourceTree = "<group>"; };
 		9BE9FED32893694800C6C49C /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
 		9BE9FED52893766D00C6C49C /* IMG_1706.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1706.jpg; path = ../../../../../../Downloads/IMG_1706.jpg; sourceTree = "<group>"; };
 		9BE9FED7289382C700C6C49C /* IMG_1707.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1707.jpg; path = ../../../../../../Downloads/IMG_1707.jpg; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		9B5BEB1B288BC06800413C20 /* RisingCamp_TableView */ = {
 			isa = PBXGroup;
 			children = (
+				9BB942412893AA040005843B /* MyLocationViewController.swift */,
 				9B700292288D3A7B006F838A /* Model */,
 				9BED18A8288BD86600D48071 /* testImage */,
 				9B2217C82891126800C86818 /* MyCattotTab */,
@@ -441,6 +444,7 @@
 				9BA643FE288CF2EB00DE4E0E /* DongNeLifeViewController.swift in Sources */,
 				9B2217C72891125500C86818 /* MyCarrotViewController.swift in Sources */,
 				9B784E66288D3F870027FB6D /* WriteForDealViewController.swift in Sources */,
+				9BB942422893AA040005843B /* MyLocationViewController.swift in Sources */,
 				9B7BC216288CF5310064E6DA /* DongNeCell.swift in Sources */,
 				9B5BEB1F288BC06800413C20 /* SceneDelegate.swift in Sources */,
 				9B7BC21E288D14DB0064E6DA /* HomeTabStruct.swift in Sources */,

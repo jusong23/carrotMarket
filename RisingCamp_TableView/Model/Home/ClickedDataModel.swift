@@ -21,4 +21,6 @@ class ClickedDataModel {
     public func inputData(image:String, name:String) {
         self.arrayStruct.append(ClickedStruct(image: image, name: name))
     }
+    
+
 }

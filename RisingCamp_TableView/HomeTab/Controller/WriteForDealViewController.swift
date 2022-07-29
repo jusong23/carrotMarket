@@ -31,6 +31,10 @@ class WriteForDealViewController: UIViewController {
             self.navigationController?.pushViewController(ChooseCategoryViewController, animated: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
     @IBAction func tapCompleteButton(_ sender: Any) {
 //        var lastNumber = HomeDataModel.count
 //        print(lastNumber)

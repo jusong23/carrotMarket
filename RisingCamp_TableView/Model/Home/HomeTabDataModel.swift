@@ -39,4 +39,8 @@ class HomeTabDataModel {
         self.arrayHomeStruct.append(HomeTabStruct(image: image, name: name, location: location, price: price))
     }
     
+    public func removeData() {
+        self.arrayHomeStruct.removeLast()
+    }
+    
 }

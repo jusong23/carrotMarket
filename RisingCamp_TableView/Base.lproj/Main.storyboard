@@ -926,10 +926,10 @@
             </objects>
             <point key="canvasLocation" x="-323" y="1085"/>
         </scene>
-        <!--View Controller-->
+        <!--My Location View Controller-->
         <scene sceneID="l71-vo-0oV">
             <objects>
-                <viewController id="l6N-l3-Hvr" customClass="ViewController" customModule="RisingCamp_TableView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="l6N-l3-Hvr" customClass="MyLocationViewController" customModule="RisingCamp_TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DpY-7F-ZGd">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -41,6 +41,7 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
         self.HomeDataModel.arrayHomeStruct.reverse()
         if UserDefaults.standard.integer(forKey: "DeleteKey") == 1 {
             self.HomeDataModel.removeData()

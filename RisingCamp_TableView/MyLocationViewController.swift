@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Tabman
+import Pageboy
 
 class MyLocationViewController: UIViewController {
 

@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var HomeDataModel = HomeTabDataModel ()
+//    var clickedModel = [ClickedModel] = []
     
     var images = ["IMG_1692.jpg", "IMG_1693.jpg", "IMG_1694.jpg", "IMG_1695.jpg" ]
 
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         tableView?.register(
@@ -33,46 +35,8 @@ class ViewController: UIViewController {
 //        NotificationCenter.default.addObserver(self, selector: #selector(test(_:)), name: NSNotification.Name("title"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(test(_:)), name: NSNotification.Name("Write"), object: nil)
      
-        
-        pageController?.numberOfPages = images.count
-        // 페이지 컨트롤의 현재 페이지를 0으로 설정
-        pageController?.currentPage = 0
-        // 페이지 표시 색상을 밝은 회색 설정
-        pageController?.pageIndicatorTintColor = UIColor.lightGray
-        // 현재 페이지 표시 색상을 검정색으로 설정
-        pageController?.currentPageIndicatorTintColor = UIColor.orange
-        controlImages?.image = UIImage(named: images[0])
-        
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_:)))
-        swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
-        self.view.addGestureRecognizer(swipeLeft)
-
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_:)))
-        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
-        self.view.addGestureRecognizer(swipeRight)
     }
-    
-    @objc func respondToSwipeGesture(_ gesture: UIGestureRecognizer) {
-        // 만일 제스쳐가 있다면
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer{
-            
-            // 발생한 이벤트가 각 방향의 스와이프 이벤트라면
-            // pageControl이 가르키는 현재 페이지에 해당하는 이미지를 imageView에 할당
-            switch swipeGesture.direction {
-                case UISwipeGestureRecognizer.Direction.left :
-                pageController.currentPage += 1
-                controlImages.image = UIImage(named: images[pageController.currentPage])
-                case UISwipeGestureRecognizer.Direction.right :
-                pageController.currentPage -= 1
-                controlImages.image = UIImage(named: images[pageController.currentPage])
-                default:
-                  break
-            }
-
-        }
-
-    }
-    
+        
     @objc func test(_ notification:NSNotification){
         guard let title = notification.userInfo!["title"] as? String else {return}
         guard let price = notification.userInfo!["price"] as? String else {return}
@@ -92,9 +56,7 @@ class ViewController: UIViewController {
     
     @IBAction func pageChanged(_ sender: UIPageControl) {
         controlImages.image = UIImage(named: images[pageController.currentPage])
-
     }
-    
     
 }
 
@@ -116,7 +78,28 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.locationLabel.text = cellLocation
         cell.priceLabel.text = cellPrice
         
+
+        
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let cellImage = HomeDataModel.getImage(index: indexPath.row)
+        let cellName = HomeDataModel.getName(index: indexPath.row)
+        
+//        print(cellImage)
+//        print(cellName)
+        
+        NotificationCenter.default.post(name: NSNotification.Name("Detail"), object: nil, userInfo: ["Image": cellImage ?? "",
+            "Name":cellName ?? ""])
+        
+        
+        guard let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeDetailViewController") as? HomeDetailViewController else {return}
+            self.navigationController?.pushViewController(ViewController, animated: true)
+
+//        NotificationCenter.default.post(name: NSNotification.Name("Write"), object: nil, userInfo: ["title":self.titleTextField.text ?? "",
+//            "price":self.priceTextField.text ?? ""]
+    } // 해당 인덱스의 사진 제목을 넘길 것임
 }
 

@@ -47,6 +47,11 @@
 		9B7BC21E288D14DB0064E6DA /* HomeTabStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7BC21C288D0FED0064E6DA /* HomeTabStruct.swift */; };
 		9BA643FC288CF03200DE4E0E /* componentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA643FB288CF03200DE4E0E /* componentSetting.swift */; };
 		9BA643FE288CF2EB00DE4E0E /* DongNeLifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA643FD288CF2EB00DE4E0E /* DongNeLifeViewController.swift */; };
+		9BB9423C2893890F0005843B /* ClickedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9423B2893890F0005843B /* ClickedModel.swift */; };
+		9BB9423E28938EB50005843B /* ClickedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9423D28938EB50005843B /* ClickedDataModel.swift */; };
+		9BE9FED42893694800C6C49C /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9FED32893694800C6C49C /* HomeDetailViewController.swift */; };
+		9BE9FED62893766D00C6C49C /* IMG_1706.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE9FED52893766D00C6C49C /* IMG_1706.jpg */; };
+		9BE9FED8289382C700C6C49C /* IMG_1707.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BE9FED7289382C700C6C49C /* IMG_1707.jpg */; };
 		9BED18A7288BD4A300D48071 /* HomeTabDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BED18A6288BD4A300D48071 /* HomeTabDataModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +98,11 @@
 		9B7BC21C288D0FED0064E6DA /* HomeTabStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabStruct.swift; sourceTree = "<group>"; };
 		9BA643FB288CF03200DE4E0E /* componentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = componentSetting.swift; path = ../componentSetting.swift; sourceTree = "<group>"; };
 		9BA643FD288CF2EB00DE4E0E /* DongNeLifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongNeLifeViewController.swift; sourceTree = "<group>"; };
+		9BB9423B2893890F0005843B /* ClickedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickedModel.swift; sourceTree = "<group>"; };
+		9BB9423D28938EB50005843B /* ClickedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickedDataModel.swift; sourceTree = "<group>"; };
+		9BE9FED32893694800C6C49C /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		9BE9FED52893766D00C6C49C /* IMG_1706.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1706.jpg; path = ../../../../../../Downloads/IMG_1706.jpg; sourceTree = "<group>"; };
+		9BE9FED7289382C700C6C49C /* IMG_1707.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1707.jpg; path = ../../../../../../Downloads/IMG_1707.jpg; sourceTree = "<group>"; };
 		9BED18A6288BD4A300D48071 /* HomeTabDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,6 +262,8 @@
 				9BED18A6288BD4A300D48071 /* HomeTabDataModel.swift */,
 				9B7BC21C288D0FED0064E6DA /* HomeTabStruct.swift */,
 				9B784E6E288D45150027FB6D /* CategoryDataModel.swift */,
+				9BB9423B2893890F0005843B /* ClickedModel.swift */,
+				9BB9423D28938EB50005843B /* ClickedDataModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -271,6 +283,7 @@
 				9B5BEB20288BC06800413C20 /* ViewController.swift */,
 				9B784E65288D3F870027FB6D /* WriteForDealViewController.swift */,
 				9B784E67288D43DF0027FB6D /* ChooseCategoryViewController.swift */,
+				9BE9FED32893694800C6C49C /* HomeDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -304,6 +317,8 @@
 		9BED18A8288BD86600D48071 /* testImage */ = {
 			isa = PBXGroup;
 			children = (
+				9BE9FED7289382C700C6C49C /* IMG_1707.jpg */,
+				9BE9FED52893766D00C6C49C /* IMG_1706.jpg */,
 				9B62F456289234AC00AB88DD /* IMG_1692.jpg */,
 				9B62F455289234AA00AB88DD /* IMG_1693.jpg */,
 				9B62F458289234AC00AB88DD /* IMG_1694.jpg */,
@@ -387,8 +402,10 @@
 				9B5BEB34288BC73400413C20 /* HomeCell.xib in Resources */,
 				9B5BEB24288BC06800413C20 /* Main.storyboard in Resources */,
 				9B62F459289234AD00AB88DD /* IMG_1693.jpg in Resources */,
+				9BE9FED62893766D00C6C49C /* IMG_1706.jpg in Resources */,
 				9B62F45B289234AD00AB88DD /* IMG_1695.jpg in Resources */,
 				9B22179F288EBA1900C86818 /* ChattingTableViewCell.xib in Resources */,
+				9BE9FED8289382C700C6C49C /* IMG_1707.jpg in Resources */,
 				9B784E6D288D44B40027FB6D /* CategoryCell.xib in Resources */,
 				9B70029C288D3EAD006F838A /* IMG_1655.jpg in Resources */,
 			);
@@ -413,9 +430,11 @@
 				9BED18A7288BD4A300D48071 /* HomeTabDataModel.swift in Sources */,
 				9B221799288EB82900C86818 /* ChatStruct.swift in Sources */,
 				9B221791288EAF8600C86818 /* ChattingViewController.swift in Sources */,
+				9BB9423E28938EB50005843B /* ClickedDataModel.swift in Sources */,
 				9B5BEB33288BC73400413C20 /* HomeCell.swift in Sources */,
 				9B22179E288EBA1900C86818 /* ChattingTableViewCell.swift in Sources */,
 				9B2217DB289130F600C86818 /* SettingSectionStruct.swift in Sources */,
+				9BE9FED42893694800C6C49C /* HomeDetailViewController.swift in Sources */,
 				9B784E68288D43DF0027FB6D /* ChooseCategoryViewController.swift in Sources */,
 				9B7BC21B288CF6BA0064E6DA /* DongNeDataModel.swift in Sources */,
 				9B784E6F288D45150027FB6D /* CategoryDataModel.swift in Sources */,
@@ -425,6 +444,7 @@
 				9B7BC216288CF5310064E6DA /* DongNeCell.swift in Sources */,
 				9B5BEB1F288BC06800413C20 /* SceneDelegate.swift in Sources */,
 				9B7BC21E288D14DB0064E6DA /* HomeTabStruct.swift in Sources */,
+				9BB9423C2893890F0005843B /* ClickedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -127,6 +127,113 @@
             </objects>
             <point key="canvasLocation" x="457.97101449275368" y="-350.22321428571428"/>
         </scene>
+        <!--HomeDetailViewController-->
+        <scene sceneID="RiA-BW-Fwu">
+            <objects>
+                <viewController storyboardIdentifier="HomeDetailViewController" title="HomeDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1KT-TD-wFW" customClass="HomeDetailViewController" customModule="RisingCamp_TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n9Y-Tr-dGn">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1394.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="dIK-U7-2Ic">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="rZX-aL-CAs"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NlW-d6-Qe7">
+                                <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                                <items>
+                                    <navigationItem id="kGL-1Y-S4l">
+                                        <leftBarButtonItems>
+                                            <barButtonItem id="bdC-5f-ai5">
+                                                <imageReference key="image" image="arrow.left" catalog="system" symbolScale="default"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="tapBackButton:" destination="1KT-TD-wFW" id="X98-Vq-iHm"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem id="IMI-HH-MS5">
+                                                <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </barButtonItem>
+                                        </leftBarButtonItems>
+                                        <rightBarButtonItems>
+                                            <barButtonItem id="4cS-ud-7sg">
+                                                <imageReference key="image" image="list.bullet" catalog="system" symbolScale="default"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="tapRemove:" destination="1KT-TD-wFW" id="fF7-L1-MWQ"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem id="XJD-Xo-zFz">
+                                                <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="default"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1706.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1xn-EC-RnN">
+                                <rect key="frame" x="0.0" y="400" width="390" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="aF7-bP-3O4"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xgK-At-SdQ">
+                                <rect key="frame" x="0.0" y="766" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="heart" catalog="system" id="ggH-vN-kCo">
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                    <barButtonItem title="|" id="lKw-g8-vLW">
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                    <barButtonItem title="가격없음" style="done" id="IsI-aj-VWQ">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dUm-1g-FWV"/>
+                                    <barButtonItem title="채팅목록보기" style="done" id="Gjy-IG-x1i">
+                                        <color key="tintColor" red="0.99607843139999996" green="0.49019607840000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugQ-rI-zTN">
+                                <rect key="frame" x="16" y="495" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ufb-2y-xsk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z2F-YJ-CVP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dIK-U7-2Ic" firstAttribute="top" secondItem="n9Y-Tr-dGn" secondAttribute="top" id="Gpn-2L-613"/>
+                            <constraint firstItem="1xn-EC-RnN" firstAttribute="trailing" secondItem="Z2F-YJ-CVP" secondAttribute="trailing" id="Je0-US-JUo"/>
+                            <constraint firstItem="NlW-d6-Qe7" firstAttribute="leading" secondItem="Z2F-YJ-CVP" secondAttribute="leading" id="PXa-4i-jkL"/>
+                            <constraint firstItem="dIK-U7-2Ic" firstAttribute="trailing" secondItem="Z2F-YJ-CVP" secondAttribute="trailing" id="Umy-WZ-YYu"/>
+                            <constraint firstItem="dIK-U7-2Ic" firstAttribute="leading" secondItem="Z2F-YJ-CVP" secondAttribute="leading" id="Yce-uk-lVz"/>
+                            <constraint firstItem="1xn-EC-RnN" firstAttribute="leading" secondItem="Z2F-YJ-CVP" secondAttribute="leading" id="bHH-lT-9o9"/>
+                            <constraint firstItem="NlW-d6-Qe7" firstAttribute="top" secondItem="Z2F-YJ-CVP" secondAttribute="top" id="irz-Tg-lKp"/>
+                            <constraint firstItem="ugQ-rI-zTN" firstAttribute="top" secondItem="1xn-EC-RnN" secondAttribute="bottom" id="jGL-4Z-jXQ"/>
+                            <constraint firstItem="NlW-d6-Qe7" firstAttribute="trailing" secondItem="Z2F-YJ-CVP" secondAttribute="trailing" id="oez-MD-Psv"/>
+                            <constraint firstItem="ugQ-rI-zTN" firstAttribute="leading" secondItem="Z2F-YJ-CVP" secondAttribute="leading" constant="16" id="rJK-uZ-1H4"/>
+                            <constraint firstItem="1xn-EC-RnN" firstAttribute="top" secondItem="dIK-U7-2Ic" secondAttribute="bottom" id="yMf-ba-JQH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="dIK-U7-2Ic" id="jju-UR-deg"/>
+                        <outlet property="nameLabel" destination="ugQ-rI-zTN" id="D1m-Lm-Ygi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zge-yW-qss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="-1032"/>
+        </scene>
         <!--중고거래 글쓰기-->
         <scene sceneID="aG5-6g-KdX">
             <objects>
@@ -424,7 +531,7 @@
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-5"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                <state key="normal" image="repeat" catalog="system">
+                                                                <state key="normal" image="slider.horizontal.3" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="14"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -1419,6 +1526,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IMG_1394.JPG" width="3024" height="4032"/>
+        <image name="IMG_1706.jpg" width="414" height="79"/>
         <image name="applelogo" catalog="system" width="103" height="128"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="bell" catalog="system" width="128" height="124"/>
@@ -1431,6 +1540,7 @@
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
@@ -1445,7 +1555,8 @@
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <image name="rectangle.inset.bottomright.fill" catalog="system" width="128" height="93"/>
-        <image name="repeat" catalog="system" width="128" height="98"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="tshirt" catalog="system" width="128" height="99"/>
         <image name="tshirt.fill" catalog="system" width="128" height="99"/>
         <image name="xmark" catalog="system" width="128" height="113"/>

@@ -12,6 +12,7 @@ class WriteForDealViewController: UIViewController {
     let HomeDataModel = HomeTabDataModel ()
 
     var dataModel = CategoryDataModel ()
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
     
